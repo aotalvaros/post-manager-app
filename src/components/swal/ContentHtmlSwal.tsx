@@ -11,8 +11,6 @@ export const ContentHtmlSwal = () => {
                 type='text'
                 id="swal-input-title"
                 placeholder="Escribe el título"
-                // value={title}
-                // onChange={(e) => setTitle(e.target.value)}
             />
         </section>
         <section className='swal-content'>
@@ -22,9 +20,6 @@ export const ContentHtmlSwal = () => {
             <textarea 
                 id="swal-input-body"
                 placeholder="Escribe el contenido"
-                
-                // value={body}
-                // onChange={(e) => setBody(e.target.value)}
             ></textarea>
         </section>
     </div>

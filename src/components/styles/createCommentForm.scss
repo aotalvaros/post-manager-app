@@ -1,0 +1,126 @@
+.form-container {
+  width: 100%;
+  max-width: 800px;
+  min-width: 240px;
+  padding: 1rem;
+  margin: 0 auto;
+  height: 55%;
+
+  .form-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+  }
+
+  .form-header {
+    padding: 0.8rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .form-title {
+    margin: 0;
+    font-size: clamp(0.95rem, 0.3042rem + 1.48vw, 1.5em);
+    font-weight: 500;
+    text-align: justify;
+    color: #1f2937;
+  }
+
+  .form-content {
+    padding: 0.8rem;
+  }
+
+  .form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-label {
+    position: absolute;
+    left: 0.75rem;
+    transition: all 0.2s ease-out;
+    background: white;
+    padding: 0 0.25rem;
+    color: #6b7280;
+    pointer-events: none;
+  }
+
+  .form-label.float {
+    transform: translateY(-50%) scale(0.85);
+    top: 0;
+    color: #2563eb;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 4px;
+    font-size: clamp(0.9rem, 0.3042rem + 1.48vw, 1em);
+    max-width: 500px;
+  }
+
+  .form-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 4px;
+    font-size: clamp(0.9rem, 0.3042rem + 1.48vw, 1em);
+    transition: all 0.2s ease;
+    min-height: 120px;
+    resize: vertical;
+    max-height: 180px;
+  }
+
+  .form-input:focus,
+  .form-textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+  }
+
+  .form-input:focus + .form-label,
+  .form-textarea:focus + .form-label,
+  .form-input:not(:placeholder-shown) + .form-label,
+  .form-textarea:not(:placeholder-shown) + .form-label {
+    transform: translateY(-50%) scale(0.85);
+    top: 0;
+    color: #2563eb;
+  }
+
+  .form-footer {
+    padding: 0.8rem;
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .submit-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: clamp(0.9rem, 0.3042rem + 1.48vw, 1em);
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    max-width: 200px;
+  }
+
+  .submit-button:hover {
+    background-color: #1d4ed8;
+  }
+
+  .submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #dbeafe;
+  }
+
+  .error-message {
+    color: #dc2626;
+    font-size: clamp(0.75rem, 0.3042rem + 1.48vw, 0.813rem);
+    margin-top: 0.5rem;
+  }
+}
