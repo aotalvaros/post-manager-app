@@ -1,6 +1,11 @@
 import '../styles/contentHtmlSwal.scss';
 
-export const ContentHtmlSwal = () => {
+interface IProps{
+    title: string,
+    body: string
+}
+
+export const ContentHtmlSwal = ({ title, body}: IProps) => {
   return (
     <div>
         <section className='swal-content'>
@@ -11,6 +16,7 @@ export const ContentHtmlSwal = () => {
                 type='text'
                 id="swal-input-title"
                 placeholder="Escribe el título"
+                defaultValue={title}
             />
         </section>
         <section className='swal-content'>
@@ -20,6 +26,7 @@ export const ContentHtmlSwal = () => {
             <textarea 
                 id="swal-input-body"
                 placeholder="Escribe el contenido"
+                defaultValue={body}
             ></textarea>
         </section>
     </div>

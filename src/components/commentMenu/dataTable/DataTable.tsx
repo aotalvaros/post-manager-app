@@ -49,7 +49,7 @@ export const DataTable = () => {
                                                         aria-controls='edit-menu'
                                                         aria-haspopup="true"
                                                         aria-expanded='true' 
-                                                        onClick={() => handleEdit(row.id)}
+                                                        onClick={() => handleEdit(row)}
                                                     >
                                                         <EditIcon className='icon-edit'/>
                                                     </IconButton>

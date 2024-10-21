@@ -11,5 +11,6 @@ export const showSwal = (options: ISwalOptions): Promise<any> => {
       cancelButtonText: options.cancelButtonText ?? 'Cancelar',
       preConfirm: options.preConfirm ?? undefined,
       html: options.html ?? undefined, 
+      confirmButtonColor: '#2563eb',
     });
   };
