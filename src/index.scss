@@ -23,3 +23,16 @@ body {
   border-radius: 20px;
   background-color: #1677ff;
 }
+
+.swal2-popup.swal2-modal{
+  border-radius: 8px;
+
+  .swal2-icon{
+    box-sizing: content-box !important;
+  }
+
+  .swal2-icon.swal2-info {
+    border-color: rgb(37, 99, 235) !important;
+    color: rgb(37, 99, 235);
+  }
+}

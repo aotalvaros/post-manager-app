@@ -38,7 +38,7 @@ export const useDataTable = () => {
       }
     };
   
-    const handleEdit = (index: string) => {
+    const handleEdit = (index: IFormState) => {
       onShowModal(index);
     };
   
@@ -60,9 +60,9 @@ export const useDataTable = () => {
       }
     };
   
-    const onShowModal = (index: string) => {
+    const onShowModal = (dataInput: IFormState) => {
       const swalContainer = document.createElement('div');
-      createRoot(swalContainer).render(<ContentHtmlSwal />);
+      createRoot(swalContainer).render(<ContentHtmlSwal body={dataInput.content} title={dataInput.title} />);
   
       showSwal({
         title: 'Editar Comentario',
@@ -91,7 +91,7 @@ export const useDataTable = () => {
           });
 
           setRows((prevRows) =>
-            prevRows.map((row) => (row.id === index ? { ...row, title, content: body } : row))
+            prevRows.map((row) => (row.id === dataInput.id ? { ...row, title, content: body } : row))
           );
         }
       });
