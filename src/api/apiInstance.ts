@@ -12,14 +12,13 @@ export const apiInstance: AxiosInstance = axios.create({
     },
 });
 
-// Interceptor de solicitudes (request interceptor)
+
 apiInstance.interceptors.request.use(function (config) {
     return config;
   }, function (error) {
     return Promise.reject(error);
 });
   
-  // Interceptor de respuestas (response interceptor)
   apiInstance.interceptors.response.use(
     (response: AxiosResponse) => {
       return response;
