@@ -2,7 +2,6 @@ import { Box, Typography } from '@mui/material';
 import '../styles/commentMenu.scss';
 import { CreateCommentForm } from './createCommentForm/CreateCommentForm';
 import { DataTable } from './dataTable/DataTable';
-import React from 'react';
 
 export const CommentMenu = () => {
 

@@ -18,8 +18,8 @@ export const CreateCommentForm = () => {
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     Swal.fire({
-      title: "Crear comentaro",
-      text: "El comentaro ha sido creado correctamente",
+      title: "Crear comentario",
+      text: "El comentario ha sido creado correctamente",
       icon: "success",
       confirmButtonText: "Aceptar",
       timer: 5000,
