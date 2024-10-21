@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# Proyecto de CRUD de Posts con React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web desarrollada en **React** que consume un servicio desde una API REST para gestionar posts. La aplicación permite listar, crear, actualizar y eliminar posts mediante un data table paginado. El diseño es **responsive**, optimizado para distintos dispositivos y resoluciones, siguiendo buenas prácticas de desarrollo.
 
-Currently, two official plugins are available:
+El proyecto fue desplegado en **Railway** y su código está disponible en **GitHub**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
 
-## Expanding the ESLint configuration
+- **CRUD** de posts: Crear, leer, actualizar y eliminar publicaciones.
+- **Paginación** en la lista de posts.
+- Notificaciones de operaciones (crear, actualizar, eliminar) mediante un **modal**.
+- **Diseño responsive** para una buena experiencia de usuario en dispositivos móviles y de escritorio.
+- Uso de **principios SOLID** y **código limpio**.
+- Desplegado en la nube usando **Railway**.
+- Uso de **GitHub** para el control de versiones y colaboración.
+- **100% cobertura** de pruebas unitarias e integrales.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologías Usadas
 
-- Configure the top-level `parserOptions` property like this:
+- **React**: Librería para construir la interfaz de usuario.
+- **Redux**: Para manejar el estado global de la aplicación.
+- **MUI (Material-UI)**: Librería de componentes de interfaz de usuario para mejorar el diseño y la accesibilidad.
+- **Ant Design**: Complemento adicional para algunos componentes de la interfaz.
+- **Axios**: Para realizar peticiones HTTP a la API REST.
+- **Testing Library**: Para realizar pruebas unitarias e integrales.
+- **SCSS**: Para la gestión de estilos en la aplicación.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Instalación y Uso
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clona el repositorio:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+```bash
+git clone https://github.com/aotalvaros/post-manager-app.git
+cd repo
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```

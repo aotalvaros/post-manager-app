@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
-import { IFormState } from '../types'
+import { IFormState } from '../../types'
 
 
 const initialState: IFormState = {
@@ -9,7 +9,7 @@ const initialState: IFormState = {
   content: '',
 }
 
-const formSlice = createSlice({
+export const createFormSlice = createSlice({
   name: 'form',
   initialState,
   reducers: {
@@ -25,5 +25,4 @@ const formSlice = createSlice({
   },
 })
 
-export const { setValue } = formSlice.actions
-export default formSlice.reducer
+export const { setValue } = createFormSlice.actions

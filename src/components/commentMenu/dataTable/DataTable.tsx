@@ -12,7 +12,7 @@ export const DataTable = () => {
     const {handleDelete, handleEdit, handlePublish, rows}  =useDataTable()
 
     return (
-        <div className='contentTable'>
+        <div className='contentTable' data-testid='content-table'>
             <h2>Comentarios</h2>
             {
                 rows.length > 0 ? 

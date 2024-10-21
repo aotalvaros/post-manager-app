@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
-import { RootState } from '../app/store'
+import { RootState } from '../store/store'
 import { IFormState } from '../types'
 import Swal from 'sweetalert2';
 import { createRoot } from 'react-dom/client';
@@ -10,7 +10,7 @@ import { deleteData, putData } from '../api';
 import { showSwal } from '../helper/showSwal';
 
 export const useDataTable = () => {
-    const contentForm = useSelector((state: RootState) => state.inputForm);
+    const contentForm = useSelector((state: RootState) => state.form);
     const [rows, setRows] = useState<IFormState[]>([]);
   
     useEffect(() => {
