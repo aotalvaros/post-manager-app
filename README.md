@@ -7,7 +7,6 @@ El proyecto fue desplegado en **Railway** y su código está disponible en **Git
 ## Características
 
 - **CRUD** de posts: Crear, leer, actualizar y eliminar publicaciones.
-- **Paginación** en la lista de posts.
 - Notificaciones de operaciones (crear, actualizar, eliminar) mediante un **modal**.
 - **Diseño responsive** para una buena experiencia de usuario en dispositivos móviles y de escritorio.
 - Uso de **principios SOLID** y **código limpio**.
