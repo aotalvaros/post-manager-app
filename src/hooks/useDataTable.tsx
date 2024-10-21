@@ -51,7 +51,7 @@ export const useDataTable = () => {
       });
   
       if (result.isConfirmed) {
-        await putData('/posts/1', rows);
+        await putData('/posts/1', rows[0]);
         showSwal({
           title: 'Publicado',
           text: 'El comentario ha sido publicado con éxito',
